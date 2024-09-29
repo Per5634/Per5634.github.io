@@ -1,7 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorg ZZP'er</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Paaaaaaaaages. Type shit</p>
+    <header>
+        <h1>Welkom op mijn website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Wie ik ben</a></li>
+                <li><a href="#services">Wat ik heb gedaan</a></li>
+                <li><a href="#experience">Ervaring</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Wie ik ben</h2>
+        <p>Ik ben een ervaren zorgverlener met een passie voor het helpen van mensen. Met een achtergrond in de gezondheidszorg bied ik professionele zorg aan mensen die het nodig hebben.</p>
+    </section>
+
+    <section id="services">
+        <h2>Wat ik heb gedaan</h2>
+        <p>Ik heb verschillende zorgdiensten geleverd, zoals thuiszorg, persoonlijke begeleiding, en hulp bij dagelijkse activiteiten. Mijn ervaring reikt van ouderenzorg tot zorg voor mensen met een beperking.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Ervaring</h2>
+        <ul>
+            <li>5+ jaar ervaring in thuiszorg</li>
+            <li>Specialisatie in ouderenzorg en begeleiding</li>
+            <li>Certificering in EHBO en reanimatie</li>
+            <li>Ervaring met zorg voor mensen met een beperking</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Versturen</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Zorg ZZP'er</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

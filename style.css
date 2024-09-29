@@ -1,101 +1,64 @@
-* {
+body {
+    font-family: 'Marcellus', serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #eaeaee;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-#about, #services, #experience {
-    background-color: #fff;
-    margin: 1rem auto;
-    padding: 2rem;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#contact {
-    background-color: #eaeaea;
-    padding: 2rem;
-    border-radius: 10px;
-}
-
-form {
+    font-family: 'Marcellus', sans-serif;
     display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
+    align-items: center;
+    color: #3081b7;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
 }
 
-label {
-    margin-top: 1rem;
-    text-align: left;
+.logo{
+   margin-right: auto; 
 }
 
-input, textarea {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 0.5rem;
+nav{
+    margin-left: auto;
+    display: flex;
 }
+
+header nav a {
+    color: #3081b7;    
+    margin-left: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+}
+
+header nav a:hover {
+    color: #003366;   
+}
+
+
+.hero {
+    background: transparent;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A7C7E7;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+}
+
 
 button {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    font-size: 1rem;
-    background-color: #333;
+    background-color: #003366;
     color: white;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #00509e;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
-    margin-top: 2rem;
-}
+

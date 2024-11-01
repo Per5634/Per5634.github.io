@@ -44,23 +44,26 @@ header nav a:hover {
     justify-content: center;
     flex-direction: column;
     padding: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     position: relative;
     height: 375px;
 }
 
 .email-button{
-        display: inline-block;
-        background-color: #5bc6d9;
-        color: white;
-        text-decoration: none;
-        font-family: 'Marcellus', serif;
-        padding: 15px 30px;
-        border-radius: 30px;
-        font-size: 16px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        position: relative;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    background-color: #5bc6d9;
+    color: white;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.email-button:hover {
+    background-color: #43acc0;
 }
 
 #about::before{
@@ -80,6 +83,7 @@ header nav a:hover {
 #about p{
     color: white;
     isolation: isolate;
+    text-align: center;
 }
 
 /* Ervaringssectie */

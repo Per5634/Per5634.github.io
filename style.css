@@ -1,64 +1,155 @@
+/* Algemene stijl voor de hele pagina */
 body {
     font-family: 'Marcellus', serif;
     margin: 0;
     padding: 0;
-    background-color: #eaeaee;
+    background: linear-gradient(to bottom, #6F8FAF, #f5f5f5)
 }
 
+/* Header en navigatiebalk */
 header {
     font-family: 'Marcellus', sans-serif;
     display: flex;
     align-items: center;
-    color: #3081b7;
+    color: white;
     text-decoration: none;
     padding: 20px;
     text-align: center;
 }
 
-.logo{
-   margin-right: auto; 
+
+/* Stijl voor het logo in de header */
+.logo {
+    margin-right: auto; 
 }
 
-nav{
+/* Navigatie in de header */
+nav {
     margin-left: auto;
     display: flex;
 }
 
+/* Stijl voor links in de navigatiebalk */
 header nav a {
-    color: #3081b7;    
+    color: white    ;
     margin-left: 20px;
     text-decoration: none;
     display: flex;
     justify-content: right;
 }
 
+/* Hover-effect voor navigatielinks */
 header nav a:hover {
-    color: #003366;   
+    color: #003366;
 }
 
+/* Over mij-sectie */
 
-.hero {
-    background: transparent;
-    height: 200px;
+#about{
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #A7C7E7;
-    font-size: 24px;
-    text-shadow: 1px 1px 2px black;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    margin-bottom: 50px;
+    position: relative;
+    height: 375px;
 }
 
+#about::before{
+    color: black;
+    background-size: 100%;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+}
 
-button {
-    background-color: #003366;
+#about h1{
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    isolation: isolate;
 }
 
-button:hover {
-    background-color: #00509e;
+#about p{
+    color: white;
+    isolation: isolate;
 }
 
+
+
+
+/* Ervaringssectie */
+/* Ovale doos voor ervaring */
+.experience-box {
+    background-color: #f5f5f5; /* Achtergrondkleur van de doos */
+    border-radius: 50px; /* Maakt de doos ovaal */
+    padding: 20px; /* Ruimte binnenin de doos */
+    margin: 20px auto; /* Centreert de doos */
+    max-width: 600px; /* Maximaal breedte van de doos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+    text-align: center; /* Centreert de tekst binnen de doos */
+}
+
+/* Stijl voor ervaringselementen */
+.experience-item {
+    display: flex; /* Flexbox voor uitlijning */
+    align-items: center; /* Centreert de items verticaal */
+    margin: 10px 0; /* Ruimte tussen de ervaringselementen */
+}
+
+.experience-item p{
+    margin-left: 10px;
+}
+
+/* Logo's binnen de ervaringselementen */
+.experience-logo {
+    width: 50px; /* Breedte van de logo's */
+    height: auto; /* Hoogte automatisch voor behoud van verhoudingen */
+    margin-right: 15px; /* Ruimte tussen logo en titel */
+}
+
+/* Titel binnen de ervaringselementen */
+.experience-box h3 {
+    color: #6F8FAF; /* Kleur van de titel */
+    margin-bottom: 20px; /* Ruimte onder de titel */
+}
+
+/* Footer-sectie */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tekst in de footer */
+footer p {
+    text-align: center;
+}
+
+/* LinkedIn-knop */
+.linkedin-button {
+    display: inline-block;
+    background-color: #5bc6d9;
+    color: white;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+/* LinkedIn logo in de knop */
+.linkedin-button img {
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Hover-effect voor de LinkedIn-knop */
+.linkedin-button:hover {
+    background-color: #43acc0;
+}
 

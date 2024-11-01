@@ -56,6 +56,20 @@ header nav a:hover {
     height: 375px;
 }
 
+.email-button{
+        display: inline-block;
+        background-color: #5bc6d9;
+        color: white;
+        text-decoration: none;
+        font-family: 'Marcellus', serif;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schaduw */
+}
+
 #about::before{
     color: black;
     background-size: 100%;
@@ -153,3 +167,57 @@ footer p {
     background-color: #43acc0;
 }
 
+
+/* Responsieve stijlen */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        display: none;
+
+    }
+    
+    #about {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .experience-box {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-item p{
+        display: none;
+    }
+
+    .email-button, .linkedin-button {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-width: 40px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .experience-logo {
+        width: 40px;
+    }
+
+    .email-button, .linkedin-button {
+        font-size: 14px;
+    }
+}
